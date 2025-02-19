@@ -65,7 +65,8 @@ public class EmployeeSalaryCalculator
 				else
 				{
 					//YOUR CODE STARTS HERE
-					grossSalary = (hourlyRate * hoursWorked) + (overTimeRate * overTime);
+					overTime = hoursWorked - standardWorkingHours;
+					grossSalary = (hourlyRate * standardWorkingHours) + (overTimeRate * overTime);
 					//YOUR CODE ENDS HERE
 				}
 
